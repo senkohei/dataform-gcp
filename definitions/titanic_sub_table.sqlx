@@ -1,0 +1,9 @@
+config {
+  type: "table"
+}
+
+SELECT
+  name,
+  sex,
+  age
+FROM ${ref("titanic_view")}
