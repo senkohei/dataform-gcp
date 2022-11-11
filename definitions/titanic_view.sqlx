@@ -1,0 +1,6 @@
+config {
+  type: "view"
+}
+
+SELECT *
+FROM `argolis-demo-project.bigquery_handson.titanic`
