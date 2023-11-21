@@ -1,0 +1,12 @@
+config {
+  type: "operations",
+  hasOutput: true
+}
+
+
+CREATE TABLE IF NOT EXISTS `argolis-demo-project.dataform.titanic_sub_table`
+(
+  name STRING NOT NULL,
+  sex STRING,
+  age STRING
+)
