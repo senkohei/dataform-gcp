@@ -1,0 +1,11 @@
+config { type: "incremental" }
+
+pre_operations {
+${when(!incremental(), `CREATE TABLE IF NOT EXISTS argolis-demo-project.dataform.incremental_test (name STRING NOT NULL,sex STRING,age STRING)`)
+}
+}
+SELECT
+  name,
+  sex,
+  age
+FROM `argolis-demo-project.bigquery_handson.titanic`
